@@ -10,7 +10,7 @@ import static org.junit.Assert.assertEquals;
 public class MyCaracteristiqueStepdefs {
 
     private Caracteristique caracteristique;
-    private Caracteristique caracteristique1 = new Caracteristique();
+    private final Caracteristique caracteristique1 = new Caracteristique();
 
     @Given("l'édition limité de {string} et datant de {int}")
     public void lEditionLimiteDeEtDatantDe(String owner, int annee) {

@@ -5,18 +5,18 @@ package caracteristiques;
  * @author Ali & Giovanni
  * @version 17/04/23
  */
+
 import voiture.Voiture;
 
 public class Caracteristique {
+    private final Voiture voiture;
     // variables d'instance - remplacez l'exemple qui suit par le vôtre
     private double vitesse;
-    private final Voiture voiture;
 
     /**
      * Constructeur d'objets de classe Caractéristiques
      */
-    public Caracteristique()
-    {
+    public Caracteristique() {
         // initialisation des variables d'instance
         this.vitesse = 0.0;
         this.voiture = new Voiture();
@@ -52,8 +52,8 @@ public class Caracteristique {
     }
 
     public String toString() {
-        return "La voiture de " +this.voiture.getOwner()+ " de " +this.voiture.getAge()+ " ans "
-        +"roule à la vitesse " +this.vitesse+" Kmh" ;
-      }
+        return "La voiture de " + this.voiture.getOwner() + " de " + this.voiture.getAge() + " ans "
+                + "roule à la vitesse " + this.vitesse + " Kmh";
+    }
 
 }

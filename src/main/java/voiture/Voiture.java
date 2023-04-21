@@ -5,6 +5,7 @@ package voiture;
  * @author Ali & Giovanni
  * @version 17/04/2023
  **/
+
 import java.time.LocalDate;
 
 public class Voiture {
@@ -21,6 +22,7 @@ public class Voiture {
         this.annee = 0; // L'année par défaut est l'année actuelle
         this.owner = "Unknown"; // Le propriétaire par défaut est "Unknown"
     }
+
     // Accesseur pour obtenir l'année de la voiture
     public int getAnnee() {
         return annee;
@@ -41,12 +43,13 @@ public class Voiture {
         this.owner = owner;
     }
 
-     public Voiture findByOwner(String owner) {
+    public Voiture findByOwner(String owner) {
         if (this.getOwner().equals(owner)) {
             return this;
         }
         return null;
     }
+
     // Méthode pour calculer l'âge de la voiture
     public int getAge() {
         int age = LocalDate.now().getYear() - annee; // Obtenir l'année actuelle et la soustraire à l'année de la voiture
@@ -55,6 +58,6 @@ public class Voiture {
 
     //Renvoie une chaîne de caractère pour les détails.
     public String toString() {
-        return "La voiture de " +owner +" a "+this.getAge();
-      }
+        return "La voiture de " + owner + " a " + this.getAge();
+    }
 }

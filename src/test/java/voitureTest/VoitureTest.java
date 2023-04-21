@@ -1,9 +1,9 @@
 package voitureTest;
 
-import voiture.Voiture;
 import org.junit.Test;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import voiture.Voiture;
 
 import static org.junit.Assert.assertEquals;
 
@@ -49,15 +49,13 @@ public class VoitureTest {
 
 
     @Test
-    public void testVoitureOwner()
-    {
+    public void testVoitureOwner() {
         Voiture Toyota = new Voiture("Yufei", 2005);
         assertEquals("Yufei", Toyota.getOwner());
     }
 
     @Test
-    public void testVoitureAnnee()
-    {
+    public void testVoitureAnnee() {
         Voiture Mercedes_AMG = new Voiture("Gio", 2005);
         assertEquals(2005, Mercedes_AMG.getAnnee());
     }

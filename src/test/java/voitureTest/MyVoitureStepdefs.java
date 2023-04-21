@@ -14,7 +14,7 @@ public class MyVoitureStepdefs {
     @Given("une voiture appartenant à {string} et datant de {int}")
     public void uneVoitureAppartenantAEtDatantDe(String owner, int annee) {
         voiture = new Voiture(owner, annee);
-        voiture1 = new Voiture(owner,annee);
+        voiture1 = new Voiture(owner, annee);
     }
 
     @When("je vérifie l'âge de la voiture de {string}")
@@ -32,7 +32,7 @@ public class MyVoitureStepdefs {
     @Given("une voiture appartenant à {string} acheté en {int}")
     public void uneVoitureAppartenantAAcheteEn(String owner, int annee) {
         voiture = new Voiture(owner, annee);
-        voiture1 = new Voiture(owner,annee);
+        voiture1 = new Voiture(owner, annee);
     }
 
 
