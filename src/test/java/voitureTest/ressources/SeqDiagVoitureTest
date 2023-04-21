@@ -1,0 +1,14 @@
+@startuml
+actor Junit
+Junit -> VoitureTest: setUp()
+Junit -> VoitureTest: testVoitureAge()
+VoitureTest -> Honda: getAge()
+VoitureTest -> VoitureTest: assertEquals()
+Junit -> VoitureTest: testVoitureOwner()
+VoitureTest -> Honda: getOwner()
+VoitureTest -> VoitureTest: assertEquals()
+Junit -> VoitureTest: testVoitureAnnee()
+VoitureTest -> Honda: getAnnee()
+VoitureTest -> VoitureTest: assertEquals()
+VoitureTest --> Junit: Display Data
+@enduml
